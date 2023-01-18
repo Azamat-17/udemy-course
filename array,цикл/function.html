@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        
+        //  function showFirstMessage(text) {
+        //     console.log(text);
+        //     let num = 20      
+        //     console.log(num);    
+        //  }
+        //  showFirstMessage('hello aza')
+         
+        //  let num = function name() {
+        //     console.log('hello world');
+        //  }
+        //  num()
+         
+//          let name = "John";
+
+// function sayHi() {
+//   alert("Hi, " + name);
+// }
+
+// name = "Pete";
+
+// sayHi();
+         
+
+// function makeWorker() {
+//   let name = "Pete";
+
+//   return function() {
+//     alert(name);
+//   };
+// }
+
+// let name = "John";
+
+// // create a function
+// let work = makeWorker();
+
+// // call it
+// work();
+
+// function sayHiBye(firstName, lastName) {
+
+// // функция-помощник, которую мы используем ниже
+// function getFullName() {
+//   return firstName + " " + lastName;
+// }
+ 
+// alert( "Hello, " + getFullName() );
+// alert( "Bye, " + getFullName() );
+
+// }
+// sayHiBye()
+
+// const usaCurr = 10;
+// const euroCurr = 20;
+
+// function convert(amount, curr) {
+//     console.log(amount + curr);
+// }
+
+// convert(500, usaCurr);
+// convert(500, euroCurr);
+
+// function sayHello(myName) {
+//     console.log('hello', myName);
+//     return (myName)
+// }
+
+// sayHello('Azamat')
+
+// function returnNeighboringNumbers(num) {
+//     console.log(num);
+//     return [num - 1, num, num + 1];
+// }
+
+// returnNeighboringNumbers(5);
+
+// function getMathResult(num, times) {
+//     if (typeof(times) !== 'number' || times <= 0) {
+//         return num;
+//         console.log();
+//     }
+//     let str = '';
+
+//     for (let i = 1; i <= times; i++) {
+//         if (i === times) {
+//             str += `${num * i}`;
+//             // Тут без черточек в конце
+//         } else {
+//             str += `${num * i}/`;
+//             // Это тоже самое, что и
+//             // str = str + num * i + "---"
+//         }
+//     }
+//     return str;
+// }
+// getMathResult(1, 10);
+
+function pow(x, n) {
+  let result = x;
+
+  for (let i = 1; i < n; i++) {
+    result *= x;
+  }
+
+  return result;
+}
+
+let x = prompt("x?", '');
+let n = prompt("n?", '');
+
+if (n < 1) {
+  alert(`Степень ${n} не поддерживается, используйте натуральное число`);
+} else {
+  alert( pow(x, n) );
+}
+    </script>
+</body>
+</html>
