@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const arr = [1, 2, 3, 5, 6, 7];
+
+        // // arr.pop();
+        // // arr.push(8)
+        // // console.log(arr);
+
+        // // for (let i = 0; i < arr.length; i++) {
+        // //     console.log(arr[i]);
+            
+        // // }
+
+        // for (let value of arr){
+        //     console.log(value);
+        // }
+
+        // let a = 5;
+        //     b = a;
+
+        // b = b + a;
+
+        // console.log(b);
+        // console.log(a);
+
+        // const obj = {
+        //     a: 5,
+        //     b:1
+        // };
+
+        // const copy = obj;
+        // copy.a = 10;
+
+        // console.log(copy);
+        // console.log(obj);
+
+
+        function copy(mainObj) {
+            let objCopy = {}
+
+            let key;
+            for (key in mainObj) {
+                objCopy[key] = mainObj[key]
+            }
+            return objCopy;
+        }
+
+        const numbers = {
+            a: 2,
+            b: 5,
+            c: {
+                x: 7,
+                y: 4
+            }
+        };
+
+        const newNumbers = copy(numbers)
+
+        newNumbers.a = 10;
+        console.log(newNumbers);
+
+        const add = { 
+            d: 17,
+            e: 20
+        };
+
+        console.log(Object.assign(numbers, add));
+
+        const oldArray = ['a', 'b', 'c'];
+        const newArray = oldArray.slice();
+
+        newArray[1] = 'azamat';
+        console.log(newArray);
+        console.log(oldArray);
+
+        const video = ['youtube', 'vimeo', 'rutube'],
+              blogs = ['wordpress', 'livejournal', 'blogger'],
+              internet = [...video, ...blogs, 'vk', 'faceboook']
+
+        console.log(internet);
+
+        function log(a, b, c) {
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+
+        const num = [2, 3, 5];
+
+        log(...num)
+
+        const array = ['a', 'b'];
+        const newAarray = [...array]
+
+        const q = {
+            one: 1,
+            two: 2
+        };
+
+        const newobj = {...q};
+        console.log(newobj);
+    </script>
+</body>
+</html>
